@@ -4,14 +4,25 @@
 
 @theme {
   --color-background: var(--color-white);
+  --color-background-brand: var(--color-violet-600);
+  --color-background-brand-active: var(--color-violet-700);
   --color-foreground: var(--color-gray-900);
-  --color-foreground-brand: var(--color-violet-600);
+  --color-foreground-brand: var(--color-violet-700);
+  --color-foreground-muted: var(--color-gray-600);
+  --color-border: var(--color-gray-300);
+  --color-border-brand: var(--color-violet-500);
+  --color-placeholder: var(--color-gray-400);
 
   --font-sans: 'Inter', 'sans-serif';
 }
 
 * {
   font-optical-sizing: auto;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 body {
