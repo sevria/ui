@@ -1,9 +1,9 @@
 {
-  "name": "ui",
+  "name": "@sevria/ui",
   "version": "0.0.1",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build && npm run prepack",
+    "build": "npm run prepack",
     "preview": "vite preview",
     "prepare": "svelte-kit sync || echo ''",
     "prepack": "svelte-kit sync && svelte-package && publint",
