@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Button, Input } from '$lib/index.js';
+  import { Button, Input, Link } from '$lib/index.js';
 </script>
 
 <div class="flex h-screen flex-col items-center justify-center">
@@ -14,6 +14,6 @@
 
   <p class="text-foreground-muted">
     Don't have an account?
-    <a href="#register" class="text-foreground-brand font-medium">Sign up</a>
+    <Link href="#register">Sign up</Link>
   </p>
 </div>

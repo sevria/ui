@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { HTMLAttributes, HTMLButtonAttributes } from 'svelte/elements';
   import { twMerge } from 'tailwind-merge';
+  import { classNames } from '../index.js';
 
   type Props = HTMLButtonAttributes &
     HTMLAttributes<HTMLAnchorElement> & {
@@ -23,7 +24,6 @@
   let _class = twMerge(
     'cursor-pointer flex items-center justify-center',
     'font-semibold transition-colors duration-75',
-    'outline-none ring-0 ring-offset-background focus-visible:ring-offset-2 focus-visible:ring-2 focus-visible:ring-border-brand',
     size === 'md' && 'h-10 px-4 text-base rounded-md',
     size === 'lg' && 'h-11 px-5 text-base rounded-md',
     square && 'px-0 w-8 h-8 rounded-lg',
@@ -31,6 +31,7 @@
     variant === 'secondary' &&
       'bg-background-semimuted text-foreground border border-border hover:bg-background-muted',
     variant === 'ghost' && 'hover:bg-background-semimuted',
+    classNames.focusable,
     className?.toString()
   );
 </script>
