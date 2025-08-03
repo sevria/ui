@@ -5,6 +5,7 @@
 
   type Props = HTMLButtonAttributes &
     HTMLAttributes<HTMLAnchorElement> & {
+      disabled?: boolean;
       href?: string;
       size?: 'sm' | 'md' | 'lg';
       square?: boolean;
@@ -12,6 +13,7 @@
     };
 
   let {
+    disabled = false,
     children,
     class: className,
     href,
@@ -25,6 +27,7 @@
     twMerge(
       'cursor-pointer flex items-center justify-center',
       'font-semibold transition-colors duration-75',
+      disabled && 'opacity-70 pointer-events-none',
       size === 'sm' && 'h-9 px-3.5 text-sm rounded-md',
       size === 'md' && 'h-10 px-4 text-base rounded-md',
       size === 'lg' && 'h-11 px-5 text-base rounded-md',
@@ -43,7 +46,7 @@
     {@render children?.()}
   </a>
 {:else}
-  <button class={_class} {...rest}>
+  <button class={_class} {disabled} {...rest}>
     {@render children?.()}
   </button>
 {/if}
