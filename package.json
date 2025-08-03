@@ -1,6 +1,13 @@
 {
   "name": "@sevria/ui",
   "version": "0.0.3",
+  "author": "Ukasyah",
+  "homepage": "https://ui.sevria.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sevria/ui.git"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "vite dev",
     "build": "npm run prepack",
