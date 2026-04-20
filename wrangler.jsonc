@@ -6,13 +6,6 @@
 		"directory": "build"
 	},
 	"env": {
-		"dev": {
-			"route": {
-				"pattern": "ui.dev.sevria.com",
-				"zone_name": "sevria.com",
-				"custom_domain": true
-			}
-		},
 		"prod": {
 			"route": {
 				"pattern": "ui.sevria.com",
