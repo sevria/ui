@@ -12,6 +12,13 @@
 				"zone_name": "sevria.com",
 				"custom_domain": true
 			}
+		},
+		"prod": {
+			"route": {
+				"pattern": "ui.sevria.com",
+				"zone_name": "sevria.com",
+				"custom_domain": true
+			}
 		}
 	}
 }
