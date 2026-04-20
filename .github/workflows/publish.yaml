@@ -1,0 +1,11 @@
+name: Publish
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  publish:
+    uses: sevria/actions/.github/workflows/publish-npm-package.yaml@main
+    secrets: inherit
