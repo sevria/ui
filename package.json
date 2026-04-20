@@ -7,7 +7,7 @@
 	"homepage": "https://ui.sevria.com",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/sevria/ui"
+		"url": "git+https://github.com/sevria/ui.git"
 	},
 	"scripts": {
 		"dev": "vite dev",
