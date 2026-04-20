@@ -1,17 +1,17 @@
 {
-	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "ui",
-	"compatibility_date": "2026-04-19",
-	"assets": {
-		"directory": "build"
-	},
-	"env": {
-		"prod": {
-			"route": {
-				"pattern": "ui.sevria.com",
-				"zone_name": "sevria.com",
-				"custom_domain": true
-			}
-		}
-	}
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ui",
+  "compatibility_date": "2026-04-19",
+  "assets": {
+    "directory": "build"
+  },
+  "env": {
+    "prod": {
+      "route": {
+        "pattern": "ui.sevria.com",
+        "zone_name": "sevria.com",
+        "custom_domain": true
+      }
+    }
+  }
 }

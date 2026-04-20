@@ -1,8 +1,8 @@
-# Sevria UI
+<svelte:head>
+  <title>Getting started - Sevria UI</title>
+</svelte:head>
 
-Modern component library for Svelte.
-
-## Getting started
+# Getting started
 
 This library requires an existing [SvelteKit](https://svelte.dev/docs/kit/introduction) project with [Tailwind CSS](https://tailwindcss.com/) configured.
 If you haven't set these up yet, follow their official documentation first.
