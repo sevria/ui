@@ -1,6 +1,6 @@
 {
 	"name": "@sevria/ui",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "Modern component library for Svelte.",
 	"author": "Ukasyah <hi@ukasyah.dev>",
 	"license": "MIT",
